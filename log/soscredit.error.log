@@ -1,0 +1,189 @@
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: No such file or directory in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Application->run() /var/www/soscredit.com/public/index.php:15
+PHP message: PHP   3. Vein\Core\Application\Service\Database->init() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:167
+PHP message: PHP   4. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:50
+PHP message: PHP   5. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:50
+PHP message: PHP   6. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:0
+PHP message: PHP   7. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP   8. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   9. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  10. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  11. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  12. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading response header from upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: No such file or directory in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Error::exception() /var/www/soscredit.com/public/index.php:18
+PHP message: PHP   3. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:75
+PHP message: PHP   4. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   5. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   6. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   7. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   8. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP m" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "essage: PHP   9. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:0
+PHP message: PHP  10. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP  11. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  12. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  13. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  14. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  15. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: No such file or directory in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. Vein\Core\Error::shutdown() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   2. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:54
+PHP message: PHP   3. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   4. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   5. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   6. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   7. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   8. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:0
+PHP message: PHP   9. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP  10. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  11. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  12. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendo" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "r/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  13. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  14. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Phalcon\Logger\Exception' with message 'Can't open log file at '/var/www/sosc" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:26:14 [error] 7#7: *1 FastCGI sent in stderr: "redit.com/app/var/logs/main.log'' in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+Stack trace:
+#0 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php(29): Phalcon\Logger\Adapter\File->__construct('/var/www/soscre...')
+#1 [internal function]: Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}()
+#2 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#3 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php(117): Phalcon\Di->get('logger')
+#4 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php(34): Vein\Core\Error::logError(2, 'fopen(/var/www/...', '/var/www/soscre...', 29)
+#5 [internal function]: Vein\Core\Error::normal(2, 'fopen(/var/www/...', '/var/www/soscre...', 29, Array)
+#6 [internal function]: fopen('/var/www/soscre...', 'ab" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: Permission denied in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Application->run() /var/www/soscredit.com/public/index.php:15
+PHP message: PHP   3. Vein\Core\Application\Service\Database->init() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:167
+PHP message: PHP   4. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:50
+PHP message: PHP   5. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:50
+PHP message: PHP   6. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:0
+PHP message: PHP   7. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP   8. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   9. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  10. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  11. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  12. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading response header from upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: Permission denied in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Error::exception() /var/www/soscredit.com/public/index.php:18
+PHP message: PHP   3. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:75
+PHP message: PHP   4. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   5. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   6. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   7. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   8. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   9. Vein\Co" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "re\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:0
+PHP message: PHP  10. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP  11. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  12. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  13. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  14. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  15. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: Permission denied in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. Vein\Core\Error::shutdown() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   2. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:54
+PHP message: PHP   3. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   4. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   5. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   6. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   7. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   8. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:0
+PHP message: PHP   9. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP  10. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  11. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  12. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendo" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "r/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  13. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  14. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Phalcon\Logger\Exception' with message 'Can't open log file at '/var/www/soscredit.com/app/var/logs/main.log'" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:27:51 [error] 6#6: *3 FastCGI sent in stderr: "' in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+Stack trace:
+#0 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php(29): Phalcon\Logger\Adapter\File->__construct('/var/www/soscre...')
+#1 [internal function]: Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}()
+#2 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#3 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php(117): Phalcon\Di->get('logger')
+#4 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php(34): Vein\Core\Error::logError(2, 'fopen(/var/www/...', '/var/www/soscre...', 29)
+#5 [internal function]: Vein\Core\Error::normal(2, 'fopen(/var/www/...', '/var/www/soscre...', 29, Array)
+#6 [internal function]: fopen('/var/www/soscre...', 'ab" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: Permission denied in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Application->run() /var/www/soscredit.com/public/index.php:15
+PHP message: PHP   3. Vein\Core\Application\Service\Database->init() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:167
+PHP message: PHP   4. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:50
+PHP message: PHP   5. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:50
+PHP message: PHP   6. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Database.php:0
+PHP message: PHP   7. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP   8. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   9. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  10. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  11. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  12. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading response header from upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: Permission denied in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Error::exception() /var/www/soscredit.com/public/index.php:18
+PHP message: PHP   3. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:75
+PHP message: PHP   4. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   5. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   6. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   7. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   8. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   9. Vein\Co" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "re\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:0
+PHP message: PHP  10. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP  11. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  12. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  13. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  14. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  15. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  fopen(/var/www/soscredit.com/app/var/logs/main.log): failed to open stream: Permission denied in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. Vein\Core\Error::shutdown() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   2. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:54
+PHP message: PHP   3. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   4. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP   5. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:0
+PHP message: PHP   6. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   7. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP   8. Vein\Core\Error::normal() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:0
+PHP message: PHP   9. Vein\Core\Error::logError() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:34
+PHP message: PHP  10. Phalcon\Di->get() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  11. Phalcon\Di\Service->resolve() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php:117
+PHP message: PHP  12. Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}() /var/www/soscredit.com/vendo" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "r/vein/phalcon-core/src/Error.php:0
+PHP message: PHP  13. Phalcon\Logger\Adapter\File->__construct() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+PHP message: PHP  14. fopen() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Phalcon\Logger\Exception' with message 'Can't open log file at '/var/www/soscredit.com/app/var/logs/main.log'" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:21 [error] 6#6: *3 FastCGI sent in stderr: "' in /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php:29
+Stack trace:
+#0 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application/Service/Logger.php(29): Phalcon\Logger\Adapter\File->__construct('/var/www/soscre...')
+#1 [internal function]: Vein\Core\Application\Service\Logger->Vein\Core\Application\Service\{closure}()
+#2 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#3 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php(117): Phalcon\Di->get('logger')
+#4 /var/www/soscredit.com/vendor/vein/phalcon-core/src/Error.php(34): Vein\Core\Error::logError(2, 'fopen(/var/www/...', '/var/www/soscre...', 29)
+#5 [internal function]: Vein\Core\Error::normal(2, 'fopen(/var/www/...', '/var/www/soscre...', 29, Array)
+#6 [internal function]: fopen('/var/www/soscre...', 'ab" while reading upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:28:40 [error] 6#6: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'Vein\Core\Mvc\View\Engine\Jade' not found in /var/www/soscredit.com/app/modules/Frontend/Service/View.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. Vein\Core\Application->getOutput() /var/www/soscredit.com/public/index.php:16
+PHP message: PHP   3. Phalcon\Mvc\Application->handle() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:194
+PHP message: PHP   4. Phalcon\Mvc\View->render() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:194
+PHP message: PHP   5. Phalcon\Mvc\View->_loadTemplateEngines() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:0
+PHP message: PHP   6. Frontend\Service\View->Frontend\Service\{closure}() /var/www/soscredit.com/vendor/vein/phalcon-core/src/Application.php:0" while reading response header from upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
+2016/09/23 09:30:20 [error] 6#6: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'Vein\Core\Application' not found in /var/www/soscredit.com/app/Application.php on line 11
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/soscredit.com/public/index.php:0
+PHP message: PHP   2. require_once() /var/www/soscredit.com/public/index.php:13" while reading response header from upstream, client: 172.18.0.1, server: phalcon.soscredit.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "phalcon.soscredit.dev:801"
