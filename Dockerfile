@@ -2,6 +2,9 @@ FROM nginx:latest
 
 MAINTAINER Vendor="lyberteam" Description="This is a new nginx image"
 
+RUN echo "Europe/Kiev" > /etc/timezone
+
+
 
 
 LABEL version="1.0"
@@ -21,5 +24,7 @@ RUN mkdir -p /var/lib/nginx/cache
 
 EXPOSE 80
 # EXPOSE 443
+
+RUN  dpkg-reconfigure -f noninteractive tzdata
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
